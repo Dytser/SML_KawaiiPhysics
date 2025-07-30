@@ -1,0 +1,12 @@
+"E:/M2-Modding/Satisfactory/SatisfactoryModLoader/Mods/KawaiiPhysics/Intermediate/Build/Linux/x64/FactoryServer/Shipping/KawaiiPhysics/Module.KawaiiPhysics.cpp.o"
+ -soname="libFactoryServer-KawaiiPhysics-Linux-Shipping.so"
+ -rpath="${ORIGIN}/../../../../../Engine/Source"
+ -rpath="${ORIGIN}/../../../../../Engine/Binaries/Linux"
+ -rpath="${ORIGIN}/../../../../../Unreal Engine - CSS/Engine/Plugins/Experimental/StructUtils/Binaries/Linux"
+ -rpath="${ORIGIN}/../../../../../Engine/Plugins/Experimental/StructUtils/Binaries/Linux"
+ -rpath="${ORIGIN}/../../../../../FactoryGame/Mods/StructUtils/Binaries/Linux"
+ -rpath-link="E:\M2-Modding\Satisfactory\SatisfactoryModLoader\Mods\KawaiiPhysics\Binaries\Linux"
+ -L"E:/M2-Modding/Satisfactory/Unreal Engine - CSS/Engine/Binaries/Linux"
+ -L"E:/M2-Modding/Satisfactory/Unreal Engine - CSS/Engine/Plugins/Experimental/StructUtils/Binaries/Linux"
+ --start-group
+ --end-group

@@ -1,0 +1,7 @@
+{
+	"BuildId": "SML",
+	"Modules": 
+	{
+		"KawaiiPhysics": "libFactoryServer-KawaiiPhysics-Linux-Shipping.so"
+	}
+}

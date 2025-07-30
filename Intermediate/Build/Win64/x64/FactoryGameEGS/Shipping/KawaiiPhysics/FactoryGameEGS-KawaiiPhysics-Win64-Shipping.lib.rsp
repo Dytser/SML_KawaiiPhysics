@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/LTCG
+/DEF
+/NAME:"FactoryGameEGS-KawaiiPhysics-Win64-Shipping.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\M2-Modding\Satisfactory\SatisfactoryModLoader\Intermediate\Build\Win64\x64\FactoryGameEGS\Shipping\Engine\SharedPCH.Engine.Cpp17.h.obj"
+"E:\M2-Modding\Satisfactory\SatisfactoryModLoader\Mods\KawaiiPhysics\Intermediate\Build\Win64\x64\FactoryGameEGS\Shipping\KawaiiPhysics\Module.KawaiiPhysics.cpp.obj"
+"E:\M2-Modding\Satisfactory\SatisfactoryModLoader\Mods\KawaiiPhysics\Intermediate\Build\Win64\x64\FactoryGameEGS\Shipping\KawaiiPhysics\Default.rc2.res"
+/OUT:"E:\M2-Modding\Satisfactory\SatisfactoryModLoader\Mods\KawaiiPhysics\Intermediate\Build\Win64\x64\FactoryGameEGS\Shipping\KawaiiPhysics\FactoryGameEGS-KawaiiPhysics-Win64-Shipping.lib"
