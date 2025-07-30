@@ -1,0 +1,38 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.19.0",
+	"FriendlyName": "KawaiiPhysics",
+	"Description": "Simple Bone Physics ported to SML",
+	"Category": "Modding",
+	"CreatedBy": "Dytser (Original Plugin by pafuhana1213)",
+	"CreatedByURL": "https://nexusmods.com/profile/Dytser",
+	"DocsURL": "https://github.com/Dytser/SML_KawaiiPhysics",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/Dytser/SML_KawaiiPhysics/issues",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "KawaiiPhysics",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		},
+		{
+			"Name": "KawaiiPhysicsEd",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault"
+		}
+	],
+	"SemVersion": "1.0.0",
+	"GameVersion": ">=415558",
+	"Plugins": [
+		{
+			"Name": "SML",
+			"Enabled": true,
+			"SemVersion": "^3.11.1"
+		}
+	]
+}
