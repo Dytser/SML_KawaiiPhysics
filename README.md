@@ -1,19 +1,27 @@
-# Kawaii Physics
-
-![UE Version](https://img.shields.io/badge/Unreal%20Engine-5.3--5.6-0e1128?logo=unrealengine&logoColor=white)
-[![GitHub release (latest by tag)](https://img.shields.io/github/v/release/pafuhana1213/KawaiiPhysics)](https://github.com/pafuhana1213/KawaiiPhysics/releases)
-[![Downloads](https://img.shields.io/github/downloads/pafuhana1213/KawaiiPhysics/total)](https://github.com/pafuhana1213/KawaiiPhysics/releases)
-[![Discussions](https://img.shields.io/github/discussions/pafuhana1213/KawaiiPhysics?logo=github)](https://github.com/pafuhana1213/KawaiiPhysics/discussions)
-[![GitHub contributors](https://img.shields.io/github/contributors/pafuhana1213/KawaiiPhysics?logo=github)](https://github.com/pafuhana1213/KawaiiPhysics/graphs/contributors)
+# Kawaii Physics for Satisfactory Mod Loader
+[![UE Version](https://img.shields.io/badge/Unreal%20Engine-5.3.2--CSS-0e1128?logo=unrealengine&logoColor=white)](https://github.com/satisfactorymodding/UnrealEngine)
+[![Downloads](https://img.shields.io/github/downloads/Dytser/SML_KawaiiPhysics/total)](https://github.com/Dytser/SML_KawaiiPhysics/releases)
+[![Issues](https://img.shields.io/github/issues/Dytser/SML_KawaiiPhysics?logo=github)](https://github.com/Dytser/SML_KawaiiPhysics/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/pafuhana1213/KawaiiPhysics)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/pafuhana1213?style=social)](https://twitter.com/pafuhana1213)
+![Static Badge](https://img.shields.io/badge/SMR-Mod%20Page-orange?style=flat&logo=modrinth)
 
-[日本語 (Japanese)](https://github.com/pafuhana1213/KawaiiPhysics/blob/master/README.md)
 
----
 
-Kawaii Physics is a simple pseudo-physics plugin for Unreal Engine.  
+![Kawaii](https://iili.io/FSQE1qv.png)
+
+
+Kawaii Physics is a plugin for Unreal engine that was brought into SML to be able to load as a dependency for mods that may want to use a more robust physics plugin than what unreal usually allows without the need to set up complex and frustrating physics assets to achieve them.
+
+A lot of modern games have started using this plugin with notable examples being 
+* Princess peach Showtime
+* Stellar blade
+* Visions of Mana
+* Wuthering Waves
+* Lies of P
+[And many more](https://github.com/pafuhana1213/KawaiiPhysics/wiki/%E6%8E%A1%E7%94%A8%E5%AE%9F%E7%B8%BE-Adoption)
+
+
+**Kawaii Physics** works as a simple pseudo-physics plugin for Unreal Engine.  
 It allows you to easily and cutely animate things that sway, such as hair, skirts, and breasts.
 
 <a href="https://youtu.be/0f-l-SP07Mo">
@@ -22,19 +30,6 @@ It allows you to easily and cutely animate things that sway, such as hair, skirt
 
 [Demo Video](https://youtu.be/0f-l-SP07Mo)
 
-## 🖼️ Gallery
-
-<img src="https://github.com/user-attachments/assets/fda69859-b60f-4fde-a683-62da3e2839e4" alt="compare" width="640px">
-
-*Character: [Gray-chan](http://rarihoma.xvs.jp/products/graychan)*
-
-<img src="https://github.com/user-attachments/assets/28d72d0c-4423-41c7-bc52-c5c7c3886e02" alt="dance5" width="640px">
-
-*Character: [Original 3D Model "Lzebul"](https://booth.pm/ja/items/4887691) / Motion: [Mirai Komachi](https://www.miraikomachi.com/download/)*
-
-<img src="https://github.com/user-attachments/assets/63faed3c-8aaa-4d4d-ae33-e98f9c8c15fd" alt="danceKano" width="640px">
-
-*Character: [TA-style Kano Saginomiya](https://uzurig.com/ja/uzurig2-rigging-plugin-for-maya-jp/) / Motion: [Shikanokonokonokoshitantan](https://booth.pm/ja/items/5975857) / Setup: [TA Co., Ltd.](https://xta.co.jp/)*
 
 ## ✨ Features
 
@@ -53,38 +48,81 @@ It allows you to easily and cutely animate things that sway, such as hair, skirt
 - External forces such as wind and gravity can be applied for artistic purposes
 - Parameters can be saved and shared using `DataAsset` and `PhysicsAsset`
 
-### Reference Material
-
-The following materials were used as a reference for implementing the physics behavior:
-- [Next Idolmaster Graphics & Animation Programming Preview](https://cedil.cesa.or.jp/cedil_sessions/view/416)
-
 ## 🚀 Getting Started
+---
+### Ensure you have a Satisfactory Modding Environment set up
+If you have not already read through and gotten your modding environment set up then follow the [**Getting Started on Ficsit Docs**](https://docs.ficsit.app/satisfactory-modding/latest/Development/BeginnersGuide/index.html) to set up your environment and return to this once you have gotten it to work and can effectively Alpakit a mod.
 
-### 1. Download
+This Git page will not go into any explanations on how to set up this environment. Come here once you have yours ready and functional.
 
-If you do not have a C++ build environment, please download the plugin from the following links:
+## Installing Kawaii Physics for SML
 
-- **[GitHub Releases](https://github.com/pafuhana1213/KawaiiPhysics/releases/)**
-- **[FAB](https://www.fab.com/ja/listings/f870c07e-0a02-4a78-a888-e52a22794572)** 
-- **[Booth](https://pafuhana1213.booth.pm/items/5943534)** (Follow the store to receive update notifications)
+For simplicity, ill refer to the Modding Environment as SML_UE from now on as it would be a shortened name from "SatisfactoryModLoader" as the project folder from the guide would be called if not renamed.
+### Downloading
+#### Method 1: Using Git Clone
 
-### 2. Supported Versions
+1. Ensure you have [Git Installed](https://github.com/git-guides/install-git)
+2. Navigate to your SML_UE folder
+3. Go to your "Mods" folder
+4. Hold Shift+Right click an empty space in the folder.
+5. Choose "Open Powershell Window here"
+6. Type ``Git Clone https://github.com/Dytser/SML_KawaiiPhysics`` 
+7. Close the powershell window once its done, You can rename the folder if you wish.
 
-- **Unreal Engine 5.3 ~ 5.6**
-- UE4.27: [v1.11.1](https://github.com/pafuhana1213/KawaiiPhysics/releases/tag/20230830-v1.11.1)
+##### Method 2: Manually downloading
 
-### 3. Installation
+1. At the top of this page press the green "code
+2. " button
+3. Download ZIP
+4. Navigate to your SML_UE folder
+5. Go into your Mods folder
+6. Extract the contents of the Zip into the mods folder.
+7. Double check to ensure you dont have 2 folders named the same thing (if you open the zip and extract it, this wont be an issue)
 
-1. Create a `Plugins` folder in the root of your project.
-2. Copy the downloaded `KawaiiPhysics` folder to the `Plugins` folder.
+### 2. Starting your Unreal Engine environment for the first time with the mod installed.
+
+If you start your unreal engine project for the first time and get any questions about recompiling plugins etc then just accept them and let unreal do its thing. Once done you wont get this in the future.
+
+### 3. Confirm the plugin is installed
+
+Now that the plugin has been installed in your environment it should be immedietly able to be used in your own mod projects.
+
+However you can still confirm it being installed prior to starting to use it in your own projects.
+1. Press "Edit"
+2. Plugins
+3. Search for Kawaii Physics
+4. Turn it on if it is not already
+
 
 ### 4. How to Use
 
 - Add and use the `KawaiiPhysics` node in the AnimGraph of the Animation Blueprint.
 - For detailed parameter settings, please refer to the Wiki.
   - **[About Each Parameter](https://github.com/pafuhana1213/KawaiiPhysics/wiki/%E5%90%84%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6--About-each-parameters)**
+ 
+### 5. Packaging your mod
+In Alpakit edit your mod and add the mod dependency.
+Name: ``KawaiiPhysics``
+Version: ``Whichever version you are using or higher``
 
-> **Note:** An error may occur when packaging a project that only uses Blueprints. In that case, please convert it to a C++ project or refer to [this article](https://papersloth.hatenablog.com/entry/2024/02/14/201629).
+*You can technically make the plugin an optional thing, your mod should simply lose any physics you have added if people dont install Kawaii Physics alongside yours.*
+
+Then just Alpakit your mod and go testing!
+
+---
+## 🖼️ Gallery
+
+<img src="https://github.com/user-attachments/assets/fda69859-b60f-4fde-a683-62da3e2839e4" alt="compare" width="640px">
+
+*Character: [Gray-chan](http://rarihoma.xvs.jp/products/graychan)*
+
+<img src="https://github.com/user-attachments/assets/28d72d0c-4423-41c7-bc52-c5c7c3886e02" alt="dance5" width="640px">
+
+*Character: [Original 3D Model "Lzebul"](https://booth.pm/ja/items/4887691) / Motion: [Mirai Komachi](https://www.miraikomachi.com/download/)*
+
+<img src="https://github.com/user-attachments/assets/63faed3c-8aaa-4d4d-ae33-e98f9c8c15fd" alt="danceKano" width="640px">
+
+*Character: [TA-style Kano Saginomiya](https://uzurig.com/ja/uzurig2-rigging-plugin-for-maya-jp/) / Motion: [Shikanokonokonokoshitantan](https://booth.pm/ja/items/5975857) / Setup: [TA Co., Ltd.](https://xta.co.jp/)*
 
 ## 📚 Documentation & Community
 
@@ -111,17 +149,6 @@ If you do not have a C++ build environment, please download the plugin from the 
   - [【UE4】Kawaii Physics Tutorial #1](https://www.youtube.com/watch?v=hlgXuVML_is)
   - [Learn Kawaii Physics in 5 minutes!【UE5】【tutorial】](https://www.youtube.com/watch?v=TliP9vSxm4c)
 
-## 🎮 Sample
-
-<img src="https://github.com/user-attachments/assets/0d866ad2-f803-400b-bd23-2d46ab17b8ae" alt="sample2" width="640px">
-
-This sample project can be downloaded from Github includes a sample level and characters.
-- **Sample Level**: `Content/KawaiiPhysicsSample/L_KawaiiPhysicsSample`
-- **Characters Used**:
-  - **Gray-chan**: http://rarihoma.xvs.jp/products/graychan
-  - **TA-style Kano Saginomiya**: Provided by [TA Co., Ltd.](https://xta.co.jp/)
-    - Copyright (c) 2025 TA Co., Ltd. All rights reserved
-    - Terms of Use: https://uzurig.com/ja/terms_of_use_jp/
 
 ## 🌟 Showcase
 
